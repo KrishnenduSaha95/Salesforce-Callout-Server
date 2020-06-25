@@ -1,0 +1,31 @@
+{
+  "name": "calloutserver",
+  "version": "1.0.0",
+  "description": "Server for testing Custom Logger Callout",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node",
+    "dev": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikrishcool/Salesforce-Callout-Server.git"
+  },
+  "author": "Krishnendu Saha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ikrishcool/Salesforce-Callout-Server/issues"
+  },
+  "homepage": "https://github.com/ikrishcool/Salesforce-Callout-Server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.23.2",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
