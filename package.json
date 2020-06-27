@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node",
-    "dev": "nodemon"
+    "dev": "nodemon -i database/ -i src/assets/"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "express": "^4.17.1",
     "helmet": "^3.23.2",
     "morgan": "^1.10.0",
+    "nedb": "^1.8.0",
     "pug": "^3.0.0",
     "socket.io": "^2.3.0"
   },

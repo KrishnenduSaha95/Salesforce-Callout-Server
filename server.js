@@ -1,12 +1,10 @@
 import { createServer } from 'http'
 import socketIO from 'socket.io'
 import app from './src/app.js'
-import socketEvent from './src/socket.js'
 
 const server = createServer(app)
 const io = socketIO(server)
-// socketEvent(io)
-
+app.locals.io = io
 
 const PORT = process.env.PORT || 80
 
