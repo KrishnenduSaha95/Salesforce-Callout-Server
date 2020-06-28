@@ -25,7 +25,9 @@ function onReady() {
 		row.insertCell(9).innerHTML = log.Instance_name__c
 		row.insertCell(10).innerHTML = log.Named_credential__c
 		row.insertCell(11).innerHTML = log.Route__c
-		showDetailView(row)
+		row.addEventListener('click', _ => {
+			showDetailView(row)
+		})
 	})
 
 	const showDetailView = row => {

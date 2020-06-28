@@ -105,6 +105,3 @@ dist
 
 # NeDB Database
 /database
-
-# Package-Lock
-package-lock.json
