@@ -5,7 +5,6 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node",
     "dev": "nodemon -i database/ -i src/assets/"
   },
   "repository": {
