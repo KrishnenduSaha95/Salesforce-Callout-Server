@@ -5,6 +5,7 @@ html(lang="en")
 		meta(name="viewport", content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui")
 		meta(name="HandheldFriendly", content="true")
 		link(rel="icon", type="image/png", sizes="32x32", href="/images/favicon-32x32.png")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap")
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap")
 		link(type="text/css", rel="stylesheet", href="/css/style.min.css")
@@ -16,14 +17,104 @@ html(lang="en")
 				table
 					thead
 						tr
-							th Name
-							th Type
+							th Color
+							th Process Name
+							th Level
+							th Process Type
+							th Functional Context
+							th Message
+							th Stack Trace
+							th Log Date
+							th Running User Id
+							th Instance Name
+							th Name Credential
+							th Route
+
 					tbody
 						each log in data
 							tr
-								td= log.name
-								td= log.logs
-					
+								td
+									img(src= '/images/' + log.Color__c.toLowerCase() + '_log.png', alt= log.Color__c)
+								td= log.Process_name__c
+								td= log.Level__c
+								td= log.Process_type__c
+								td= log.Functional_context__c
+								td= log.Message__c
+								td= log.Stacktrace__c
+								td= log.Log_date__c
+								td= log.Running_user__c
+								td= log.Instance_name__c
+								td= log.Named_credential__c
+								td= log.Route__c
+
+			#details-modal
+				.modal-container
+					.modal-header
+						span.material-icons.close(title="close") close
+						h2 Modal Header
+					.modal-content
+						.row
+							.col.heading
+								span Color
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Process Name
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Level
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Process Type
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Functional Context
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Message
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Stack Trace
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Log Date
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Running User Id
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Instance Name
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Name Credential
+							.col.desc
+								span 
+						.row
+							.col.heading
+								span Route
+							.col.desc
+								span 
+			#modal_backdrop
+
 
 		script(type="text/javascript", src="/socket.io/socket.io.js")
 		script(type="text/javascript", src="/js/data.js")
