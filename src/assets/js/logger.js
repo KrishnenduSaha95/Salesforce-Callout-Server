@@ -17,13 +17,13 @@ function onReady() {
 		row.insertCell(1).innerHTML = log.Process_name__c
 		row.insertCell(2).innerHTML = log.Level__c
 		row.insertCell(3).innerHTML = log.Process_type__c
-		row.insertCell(5).innerHTML = log.Message__c
-		row.insertCell(6).innerHTML = log.Stacktrace__c
-		row.insertCell(7).innerHTML = log.Log_date__c
-		row.insertCell(8).innerHTML = log.Running_user__c
-		row.insertCell(9).innerHTML = log.Instance_name__c
-		row.insertCell(10).innerHTML = log.Named_credential__c
-		row.insertCell(11).innerHTML = log.Route__c
+		row.insertCell(4).innerHTML = log.Message__c
+		row.insertCell(5).innerHTML = log.Stacktrace__c
+		row.insertCell(6).innerHTML = log.Log_date__c
+		row.insertCell(7).innerHTML = log.Running_user__c
+		row.insertCell(8).innerHTML = log.Instance_name__c
+		row.insertCell(9).innerHTML = log.Named_credential__c
+		row.insertCell(10).innerHTML = log.Route__c
 		row.addEventListener('click', _ => {
 			showDetailView(row)
 		})
