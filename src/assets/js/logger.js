@@ -17,7 +17,6 @@ function onReady() {
 		row.insertCell(1).innerHTML = log.Process_name__c
 		row.insertCell(2).innerHTML = log.Level__c
 		row.insertCell(3).innerHTML = log.Process_type__c
-		row.insertCell(4).innerHTML = log.Functional_context__c
 		row.insertCell(5).innerHTML = log.Message__c
 		row.insertCell(6).innerHTML = log.Stacktrace__c
 		row.insertCell(7).innerHTML = log.Log_date__c

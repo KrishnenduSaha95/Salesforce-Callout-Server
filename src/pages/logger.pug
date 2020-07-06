@@ -21,7 +21,6 @@ html(lang="en")
 							th Process Name
 							th Level
 							th Process Type
-							th Functional Context
 							th Message
 							th Stack Trace
 							th Log Date
@@ -38,7 +37,6 @@ html(lang="en")
 								td= log.Process_name__c
 								td= log.Level__c
 								td= log.Process_type__c
-								td= log.Functional_context__c
 								td= log.Message__c
 								td= log.Stacktrace__c
 								td= log.Log_date__c
@@ -51,7 +49,7 @@ html(lang="en")
 				.modal-container
 					.modal-header
 						span.material-icons.close(title="close") close
-						h2 Modal Header
+						h2 Log Details
 					.modal-content
 						.row
 							.col.heading
@@ -71,11 +69,6 @@ html(lang="en")
 						.row
 							.col.heading
 								span Process Type
-							.col.desc
-								span 
-						.row
-							.col.heading
-								span Functional Context
 							.col.desc
 								span 
 						.row

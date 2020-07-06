@@ -110,6 +110,7 @@ section {
 	}
 
 	#details-modal {
+
 		position: fixed;
 		width: 100%;
 		height: 100%;
@@ -125,6 +126,11 @@ section {
 			z-index: 10;
 			opacity: 1;
 		}
+
+		* {
+			user-select: text;
+		}
+		
 
 		.modal-container {
 			position: relative;
