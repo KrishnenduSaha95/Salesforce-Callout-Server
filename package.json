@@ -22,7 +22,7 @@
     "helmet": "^3.23.2",
     "morgan": "^1.10.0",
     "nedb": "^1.8.0",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "socket.io": "^2.3.0"
   },
   "devDependencies": {
