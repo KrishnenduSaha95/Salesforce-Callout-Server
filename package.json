@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/ikrishcool/Salesforce-Callout-Server#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "helmet": "^3.23.2",
     "morgan": "^1.10.0",
     "nedb": "^1.8.0",
